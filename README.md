@@ -25,5 +25,6 @@ The test scenarios will run successfully on chromedriver.
 
 ## Run Scripts
 * Clone the project and import to eclipse IDE
+* Once immported, right click on pom.xml > Maven > Update project
 * Open TestRunner.java from src/test/java/runner
 * Right click anywhere in the file and Run As > TestNG Test
