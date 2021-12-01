@@ -26,25 +26,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
-				<configuration>
-					<systemPropertyVariables>
-						<allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-						<allure.link.issue.pattern>https://dev.azure.com/sseennivasan89/My%20Project/_workitem/edit/{}</allure.link.issue.pattern>
-						<allure.link.tms.pattern>https://exxample.org/browse/{}</allure.link.tms.pattern>
-					</systemPropertyVariables>
-					<argLine>
-						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-						-Dcucumber.options="--plugin
-						io.qameta.allure.cucumberjvm.AllureCucumberJvm"
-					</argLine>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.aspectj</groupId>
-						<artifactId>aspectjweaver</artifactId>
-						<version>${aspectj.version}</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
@@ -84,13 +65,6 @@
 			<version>4.0.9</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm 
-			<dependency> <groupId>io.qameta.allure</groupId> <artifactId>allure-cucumber-jvm</artifactId> 
-			<version>2.16.1</version> </dependency> -->
-
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng 
-			<dependency> <groupId>io.qameta.allure</groupId> <artifactId>allure-testng</artifactId> 
-			<version>2.16.1</version> </dependency> -->
 	</dependencies>
 
 </project>
