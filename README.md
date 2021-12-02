@@ -1,6 +1,6 @@
 # nine-afr-automation
 
-This project is a UI automation solution that will test for the subsciption prompt on an AFR page.
+This project is a UI automation solution that will test for the subsciption prompt on an Australian Financial Review page.
 The test scenarios will run successfully on chromedriver.
 
 ## Pre-requisites
