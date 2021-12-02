@@ -6,10 +6,6 @@
 	<artifactId>CucumberJava_AfrTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<properties>
-		<aspectj.version>1.8.10</aspectj.version>
-	</properties>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -58,13 +54,5 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.1.0</version>
 		</dependency>
-
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>4.0.9</version>
-		</dependency>
-
 	</dependencies>
-
 </project>

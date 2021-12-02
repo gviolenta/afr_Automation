@@ -1,4 +1,3 @@
-@tmsLink=1234
 @Feature
 Feature: Subscription Prompt feature
   As a user, I want to veridy that subscription prompt appears and disappear from the page
@@ -14,5 +13,4 @@ Feature: Subscription Prompt feature
     Given user go to South China Sea article page on AFR site
     And user scroll at the bottom of the page
     Then verify that the subscription prompt disappears on the page after 10 seconds
-    
-  
+     

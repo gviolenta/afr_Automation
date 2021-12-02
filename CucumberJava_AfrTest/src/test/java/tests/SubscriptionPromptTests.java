@@ -14,16 +14,16 @@ public class SubscriptionPromptTests {
 
 	@Given("user go to South China Sea article page on AFR site")
 	public void user_go_to_south_china_sea_article_page_on_afr_site() {
-			
+
 		Hooks.driver.get(Constants.ARTICLE_URL);
 		articlePage = new ArticlePage(Hooks.driver);
 	}
-	
-		@When("user scroll at the bottom of the page")
+
+	@When("user scroll at the bottom of the page")
 	public void user_scroll_at_the_bottom_of_the_page() throws Exception {
 		articlePage.goToBottomOfPage();
 		Assert.assertEquals(true, articlePage.verifyFooterIsDisplayed(), "verify subscription prompt appears");
-		
+
 	}
 
 	@Then("the subscription prompt appears at the page")
